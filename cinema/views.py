@@ -1,9 +1,17 @@
 from rest_framework import viewsets
 
 from cinema.models import Movie, Actor, CinemaHall, Genre, MovieSession
-from cinema.serializers import MovieSerializer, ActorSerializer, CinemaHallSerializer, GenreSerializer, \
-    MovieSessionSerializer, MovieListSerializer, MovieSessionRetrieveSerializer, MovieSessionListSerializer, \
+from cinema.serializers import (
+    MovieSerializer,
+    ActorSerializer,
+    CinemaHallSerializer,
+    GenreSerializer,
+    MovieSessionSerializer,
+    MovieListSerializer,
+    MovieSessionRetrieveSerializer,
+    MovieSessionListSerializer,
     MovieRetrieveSerializer
+)
 
 
 class MovieViewSet(viewsets.ModelViewSet):
